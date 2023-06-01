@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 95vw;
+  height: 90vh;
+  padding: 5px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gmap_search {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.search_bar {
+  font-size: 1.5rem;
+  height: 2rem;
+  width: 25rem;
+}
+
+.search_btn {
+  font-size: 1.5rem;
+  color: rgb(230, 222, 222);
+  background-color: blue;
+  border-radius: 4px;
+  padding: 0.3rem;
+  border: none;
+}
+
+.submit_btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 5, 210);
+}
+
+.gmap_iframe {
+  width: 100vw !important;
+  height: 90vh !important;
+}
+
+@media screen and (max-width: 400px) {
+  .gmap_search {
+    justify-content: flex-start;
+  }
+  .search_bar {
+    width: 60%;
+  }
+  .search_btn {
+  }
+}
